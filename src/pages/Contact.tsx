@@ -13,11 +13,11 @@ const Contact: React.FC = () => {
           <ul style={{ listStyle: 'none', padding: 0 }}>
             <li style={{ marginBottom: '1rem' }}>
               <i className="ri-mail-line" style={{ marginRight: '10px' }}></i>
-              support@aurazy.com
+              auraofgenzy@gmail.com
             </li>
             <li style={{ marginBottom: '1rem' }}>
               <i className="ri-phone-line" style={{ marginRight: '10px' }}></i>
-              +7 999 939 085
+              +7725878970
             </li>
             <li style={{ marginBottom: '1rem' }}>
               <i className="ri-whatsapp-line" style={{ marginRight: '10px' }}></i>

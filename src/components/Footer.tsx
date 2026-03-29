@@ -12,12 +12,12 @@ const Footer: React.FC = () => {
           <p>Complete your style with awesome clothes from us.</p>
           <ul className="footer__socials">
             <li>
-              <a href="https://www.facebook.com/sharad.pal.3591" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/chetan.thakre.169" target="_blank" rel="noopener noreferrer">
                 <i className="ri-facebook-fill"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/its.sharad111?igsh=c3V5Y3czcGhibmt2" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/aurazy.india?igsh=aTVjMnZtcjJqN3hj" target="_blank" rel="noopener noreferrer">
                 <i className="ri-instagram-line"></i>
               </a>
             </li>

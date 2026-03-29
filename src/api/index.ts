@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://aurazy-backend-2.onrender.com/api' });
+const API = axios.create({ baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api' });
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem('token')) {
@@ -23,5 +23,10 @@ export const fetchUserProfile = () => API.get('/users/profile');
 export const createPaymentOrder = (orderData: any) => API.post('/orders', orderData);
 export const verifyPayment = (paymentData: any) => API.post('/payment/verify', paymentData);
 export const fetchMyOrders = () => API.get('/orders/mine');
+
+export const fetchAdminOrders = () => API.get('/orders/admin');
+export const updateOrderStatus = (id: string, status: string) => API.put(`/orders/admin/${id}/status`, { status });
+
+export const fetchAnalytics = () => API.get('/orders/admin/analytics');
 
 

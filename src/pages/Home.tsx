@@ -98,7 +98,7 @@ const Home: React.FC = () => {
             <p>Live for influential and innovative fashion!</p>
             <div className="header__btns">
               <Link to="/collection" className="btn">Shop Now</Link>
-              <a href="https://wa.me/7999939085?text=Hey!" target="_blank" rel="noopener noreferrer" className="btn" style={{ background: '#25D366' }}>
+              <a href="https://wa.me/7725878970?text=Hey!" target="_blank" rel="noopener noreferrer" className="btn" style={{ background: '#25D366' }}>
                 <i className="ri-whatsapp-line"></i> Chat on WhatsApp
               </a>
             </div>
@@ -166,7 +166,7 @@ const Home: React.FC = () => {
             <h2><span>Big Offer Coming Soon!</span></h2>
             <p>Stay tuned for our next fashion sale — exclusive discounts and new arrivals waiting for you!</p>
             <h4 style={{ marginBottom: '1rem' }}>Join our WhatsApp community to get early access</h4>
-            <a href="https://wa.me/7999939085?text=Hey!" target="_blank" rel="noopener noreferrer" className="btn">Notify Me on WhatsApp</a>
+            <a href="https://wa.me/7725878970?text=Hey!" target="_blank" rel="noopener noreferrer" className="btn">Notify Me on WhatsApp</a>
           </div>
         </div>
       </section>

@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const { cartCount, setIsCartOpen } = useCart();
-  const { isLoggedIn } = useAuth();
+  const { isLoggedIn, user } = useAuth();
   const navigate = useNavigate();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -42,6 +42,11 @@ const Navbar: React.FC = () => {
         </div>
 
         <div className="nav__actions">
+          {user?.isAdmin && (
+            <Link to="/admin/orders" className="admin-link-badge">
+              ADMIN
+            </Link>
+          )}
           <i className="ri-search-line nav-icon" onClick={toggleSearch}></i>
 
           <Link to={isLoggedIn ? "/profile" : "/login"}>
@@ -62,6 +67,7 @@ const Navbar: React.FC = () => {
           <li><HashLink smooth to="/#catalogue" onClick={closeMenu}>CATALOGUE</HashLink></li>
           <li><HashLink smooth to="/#fashion" onClick={closeMenu}>FASHION</HashLink></li>
           <li><HashLink smooth to="/#favourite" onClick={closeMenu}>FAVOURITE</HashLink></li>
+          {user?.isAdmin && <li><Link to="/admin/orders" onClick={closeMenu}>ADMIN</Link></li>}
         </ul>
       </div>
 

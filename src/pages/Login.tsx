@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { signIn } from '../api';
 
@@ -69,7 +69,7 @@ const Login: React.FC = () => {
         </form>
 
         <div className="login-footer">
-          <p>Don't have an account? <a href="#">Create one</a></p>
+          <p>Don't have an account? <Link to="/register">Create one</Link></p>
           <a href="#" className="forgot-password">Forgot password?</a>
         </div>
       </div>
