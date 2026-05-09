@@ -19,7 +19,7 @@ const CartDrawer: React.FC = () => {
         <h3>SHOPPING CART <span id="cart-count">{cartCount}</span></h3>
         <button id="close-cart" onClick={() => setIsCartOpen(false)}>✕</button>
       </div>
-
+  
       <div className="cart-items" id="cart-items">
         {cart.length === 0 ? (
           <p style={{ padding: '1rem', textAlign: 'center' }}>Your cart is empty.</p>
