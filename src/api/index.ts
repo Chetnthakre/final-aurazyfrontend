@@ -1,7 +1,5 @@
 import axios from 'axios';
-
-const API = axios.create({ baseURL: "https://aurazy-backend.onrender.com" });
-
+const API = axios.create({ baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api' });
 API.interceptors.request.use((req) => {
   if (localStorage.getItem('token')) {
     req.headers.Authorization = `Bearer ${localStorage.getItem('token')}`;
@@ -28,5 +26,4 @@ export const fetchAdminOrders = () => API.get('/orders/admin');
 export const updateOrderStatus = (id: string, status: string) => API.put(`/orders/admin/${id}/status`, { status });
 
 export const fetchAnalytics = () => API.get('/orders/admin/analytics');
-
 
