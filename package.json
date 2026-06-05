@@ -19,6 +19,7 @@
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.13.1",
     "react-router-hash-link": "^2.4.3",
+    "recharts": "^3.8.1",
     "scrollreveal": "^4.0.9"
   },
   "devDependencies": {
@@ -27,6 +28,7 @@
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "@types/react-router-hash-link": "^2.4.9",
+    "@types/recharts": "^1.8.29",
     "@types/scrollreveal": "^0.0.11",
     "@vitejs/plugin-react": "^5.1.1",
     "eslint": "^9.39.1",
