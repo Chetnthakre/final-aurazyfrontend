@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { fetchAnalytics } from "../api";
 import {
-  LineChart,
-  Line,
   XAxis,
   YAxis,
   CartesianGrid,

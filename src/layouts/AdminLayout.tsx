@@ -6,7 +6,7 @@ import { useAdminAuth } from '../context/AdminAuthContext';
 import '../styles/AdminDashboard.css';
 
 const AdminLayout: React.FC = () => {
-  const { adminUser, loading } = useAdminAuth();
+  const {  loading } = useAdminAuth();
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [darkMode, setDarkMode] = useState(false);
 
