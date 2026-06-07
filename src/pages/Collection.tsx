@@ -29,15 +29,6 @@ const Collection: React.FC = () => {
   
 
   const BASE_URL = "https://aurazy-backend-2.onrender.com";
-    
-
-
-
-
-
-
-
-
 
 
 
